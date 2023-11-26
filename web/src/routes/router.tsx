@@ -74,6 +74,7 @@ const ContestNewClarificationPage = lazy(() => import('../pages/contest/ContestN
 const ContestClarificationDetailPage = lazy(() => import('../pages/contest/ContestClarificationDetailPage'))
 const ContestSubmissionListPage = lazy(() => import('../pages/contest/ContestSubmissionListPage'))
 const ContestStandingPage = lazy(() => import('../pages/contest/ContestStandingPage'))
+const StatusPage = lazy(() => import('../pages/StatusPage'))
 
 export const router = createBrowserRouter(
   [
@@ -156,6 +157,7 @@ export const router = createBrowserRouter(
       children: [
         { index: true, element: <HomePage/> },
         { path: 'about', element: <div>About</div> },
+        { path: 'status', element: <StatusPage/> },
         {
           path: 'p',
           children: [
